@@ -4,7 +4,7 @@ from django.http import HttpResponse, JsonResponse
 from rest_framework.response import Response
 from rest_framework import status
 from django.views.decorators.csrf import csrf_exempt
-from .serializer import UserSerializer
+from .serializer import RegisterSerializer
 from django.contrib.auth.hashers import make_password, check_password
 
 
