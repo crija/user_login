@@ -19,7 +19,7 @@ def user(request):
         data = {'email':request.data['email'], 'password':hashed_password}
         print(data)
 
-        serializer = UserSerializer(data=data)
+        serializer = RegisterSerializer(data=data)
         
         if serializer.is_valid():
             serializer.save()
